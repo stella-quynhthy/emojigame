@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#gameContainer {
+    border: 2px solid black;
+    height: 70vh;
+    border-radius: 15px;
+}
+
+#start {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+}
