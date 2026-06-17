@@ -1,15 +1,21 @@
 body {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(233, 251, 233);
 }
 
 #gameContainer {
     border: 2px solid black;
     height: 70vh;
     border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
 }
 
 #start {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 15px;
+    background-color: rgb(209, 250, 209);
+    border-radius: 5px;
 }
