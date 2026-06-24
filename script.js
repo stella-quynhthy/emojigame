@@ -35,6 +35,8 @@ function showEmojis() {
             if (emoji === targetDisplay.textContent) {
                 score++;
                 scoreDisplay.textContent = score;
+            } else {
+                endGame();
             }
             button.remove();
         });
@@ -44,7 +46,16 @@ function showEmojis() {
 //}
 
 function startGame() {
+    clearInterval(gameInterval);
+    score = 0;
+    scoreDisplay.textContent = score;
+    gameContainer.innerHTML = "";
     targetEmoji();
+}
+
+function endGame() {
+    clearInterval(gameInterval);
+    gameContainer.innerHTML = "YOU LOSE!";
 }
 
 startBtn.addEventListener("click", startGame)
